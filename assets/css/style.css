@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    height: 65em;
     margin: 0 auto;
     background-image: url("concrete-texture.png")   
 }
@@ -8,9 +9,11 @@ header {
     background: #ffffff;
     font-size: 40px;
     padding: 43px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #cccccc;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+/* Marc Alkons Home Button */
 #index {
     position: absolute;
     background: #4aaaa5;
@@ -37,17 +40,37 @@ nav {
     border-right: 3px; 
 }
 
+/* Contact, About Me, Portfolio*/
+.am {
+    color: #4aaaa5;
+}
+
 section {
     width: 920px;
-    height: 400px;
+    height: 450px;
     margin: 0 auto;
     margin-top: 50px;
     padding: 20px;
     background-color: #ffffff;
+    border: 1px solid #dddddd;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     border: 1px solid #eee;
 }
 
+/* Section for the portfolio to make the section longer to accomodate the pictures */
+.portfolio {
+    width: 920px;
+    height: 775px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border: 1px solid #eee;
+}
+
+/* Contact, About Me, Portfolio*/
 .am {
     color: #4aaaa5;
 }
@@ -57,11 +80,17 @@ section {
     margin-right: 10px;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
+
 #hr {
     background-color: lightgray;
     height: 2px;
 }
 
+/* Footer section*/
 #hr1 {
     background-color: #4aaaa5;
     height: 10px;
@@ -70,13 +99,14 @@ section {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     background-color: #666666;
     text-align: center;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;   
 }
 
+/* Copywrite */
 #copy {
     margin: 0 auto;
     color: #eee;
@@ -94,7 +124,7 @@ textarea {
     width: 99%;    
 }
 
-
+/* Submit Button*/
 input[type=submit] {
     background-color: #4aaaa5;
     border: none;
@@ -104,14 +134,55 @@ input[type=submit] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 20px 2px;
     cursor: pointer;
+}
+
+/* Portfolio Link Box Lables*/
+.box {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    margin: 0;
+    text-decoration: none; 
+}
+
+.box-1 {
+    top: 395px;
+    left: 305px;
+}
+
+.box-2 {
+    left: 305px;
+    top: 625px;
+}
+
+.box-3 {
+    left: 305px;
+    bottom: -145px;
+}
+
+.box-4 {
+    right: 505px;
+    top: 395px;
+}    
+
+.box-5 {
+    right: 505px;
+    top: 625px;
+}
+
+.pic {
+    margin: 5px;
+    margin-top: 20px;   
 }
 
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
-
 }
 
